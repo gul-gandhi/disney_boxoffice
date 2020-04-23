@@ -18,7 +18,7 @@ genre_yearly = group.reset_index()
 print(genre_yearly.head(10))
 
 #sns.relplot(kind='line', x='release_year', y='inflation_adjusted_gross', hue='genre', data=genre_yearly)
-#dummy variables for genre
+#dummy variables
 genre_dummies =  pd.get_dummies(data['genre'], drop_first=True)
 print(genre_dummies.head())
 
